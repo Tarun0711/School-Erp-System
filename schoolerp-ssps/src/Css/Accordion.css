@@ -1,0 +1,39 @@
+ /* Style the accordion */
+ .accordion {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    cursor: pointer;
+    
+    width: 100%;
+    
+    text-align: left;
+    outline: none;
+    transition: background-color 0.4s;
+    display: flex;
+    
+    align-items: center;
+}
+
+.accordion > div{
+    flex: 1;
+    padding: 0.8rem 0rem ;
+}
+.accordion > input{
+margin: 0.8rem;
+}
+/* Style the active class, i.e., when the accordion is opened */
+.active, .accordion:hover {
+    /* background-color: #ddd; */
+}
+
+/* Style the panel that contains the table */
+.panel {
+    padding: 10px ;
+    background-color: white;
+    
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+}

@@ -1,0 +1,20 @@
+.home {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.Dashboard{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.Dashboard-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+
+}

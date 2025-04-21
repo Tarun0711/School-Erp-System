@@ -1,0 +1,148 @@
+.addStudentForm {
+  min-width: 300px;
+  max-width: 100%;
+  margin: auto;
+  /* padding-top: 10px;
+  background-color: #fff;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.fee-details {
+  margin: 0px 20px;
+}
+
+.form-control {
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+.photo-preview-lebel {
+  font-weight: 900;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+
+.form-control input,
+.form-control select {
+  padding: 6px;
+  /* width: calc(100% - 20px); */
+  outline: none;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.btn-register {
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+  display: block;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(to right, rgb(0, 75, 110) 0%, rgb(8, 150, 215) 100%);
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn-register:hover {
+  opacity: 0.7;
+}
+
+.import-data {
+  margin: 20px auto;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #b4433b;
+  padding: 5px 10px;
+}
+
+.import-data form input {
+  margin: 10px auto;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.import-data h2 {
+  color: white;
+}
+
+.import-data form button {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.fees-accordion-box {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  background-color: #c0c0c05c;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+}
+
+::selection {
+  background-color: linear-gradient(to right, rgb(0, 75, 110) 0%, rgb(8, 150, 215) 100%); /* Change to your desired color */
+  color: white; /* Change to your desired text color */
+}
+
+/* AddStudent.css */
+.photo-preview-container {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  /* padding-top: 10px; */
+}
+
+.photo-preview-container .photo-preview {
+  width: 100%;
+  height: auto;
+}
+
+.photo-preview-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.form-control label  {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+

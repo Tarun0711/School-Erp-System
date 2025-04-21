@@ -1,0 +1,222 @@
+/* add-form.css */
+.class{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.classes-table{
+  margin: 10px;
+  width: 100%;
+  /* flex:1; */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.feesTypePage{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feesTypePage div:nth-child(2){
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.add-form {
+    width: 350px;
+    margin: 10px 10px;
+    padding: 10px;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .add-form .form-control{
+    max-width: 300px;
+  }
+  .add-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .form-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input[type="text"],
+  .form-control input[type="number"],.form-control select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 75, 110);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .section-box{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  /* table */
+  /* CSS for the table */
+Table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+Th, Td {
+  /* border: 1px solid #ddd; */
+  padding: 5px;
+  text-align: left;
+}
+
+Th {
+  background-color: #f2f2f2;
+}
+
+/* CSS for buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* CSS for edit and delete buttons inside table */
+Td button {
+  margin-right: 5px;
+}
+
+Td button:last-child {
+  margin-right: 0;
+}
+
+
+.section-cell{
+  letter-spacing: 4px;
+}
+
+
+/* feegroup */
+/* CSS for fee group div */
+.fee-group {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fee-group div {
+  margin-bottom: 10px;
+}
+
+.fee-group div label {
+  display: block;
+  font-weight: bold;
+}
+
+.fee-group div input,
+.fee-group div select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.fee-group button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.fee-group button:hover {
+  background-color: #45a049;
+}
+
+
+.fee-grp-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fee-grp-row > div{
+  text-align: left;
+}
+
+.fee-grp-row > div:first-child{
+  flex:1;
+}
+
+.fee-group button.btn-dlt{
+  background-color: red;
+  padding: 5px;
+  
+}
+
+.fee-group button.btn-dlt svg{
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .class,
+  .feesTypePage,
+  .fee-grp-row {
+    flex-direction: column;
+  }
+  
+}

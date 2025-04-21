@@ -1,0 +1,11 @@
+@media print{
+    @media print {
+        .print-button {
+          display: none;
+        }
+        .admit-card-container {
+          display: block;
+        }
+      }
+
+}

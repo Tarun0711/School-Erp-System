@@ -1,0 +1,263 @@
+.addStudents{
+  overflow-y: scroll;
+}
+.admitCard-receipt{
+  max-width: 800px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+.admission-receipt {
+  max-width: 800px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.divider {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+
+.school-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  gap: 4px;
+}
+
+.school-logo-adm-res {
+  width: 100px;
+  height: auto;
+}
+
+.school-details {
+  /* flex-grow: 1; */
+}
+
+.school-name-adm-res {
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), -2px -2px 2px rgba(255, 255, 255, 0.5); /* Adjust the values for the desired 3D effect */
+  background: linear-gradient(to bottom, #ff6b6b, #ffa500, #ffff00); /* Adjust the colors for the desired gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #000000; /* Adjust the width and color of the text border */
+}
+
+/* .school-name-adm-res {
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+} */
+
+/* font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal; */
+
+
+.school-address p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  transform: skewX(-15deg); 
+}
+
+
+.address {
+  margin-bottom: 20px;
+}
+
+.student-details,
+.academic-details,
+.additional-details,
+.fee-details,
+.student-photo {
+  margin-bottom: 20px;
+}
+
+.student-details h3,
+.academic-details h3,
+.additional-details h3,
+.fee-details h3,
+.student-photo h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.student-photo-image {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.student-photo-cell {
+  margin: 0;
+  padding: 0; /* Add this to remove padding */
+}
+
+
+.academic-details {
+  position: relative;
+}
+
+.academic-details .academic-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 200px;
+  height: auto;
+}
+
+.info-table,
+.fee-table {
+  width: 90%;
+}
+
+.address-cell {
+  max-width: 200px;
+  /* Adjust the width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sign-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.sign-section p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .school-info {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+
+  .school-logo-adm-res {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .school-name-adm-res {
+    font-size: 30px;
+  }
+}
+
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    margin: 0.2cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: #fff; */
+  }
+
+  .navbar {
+    display: none;
+    margin: 0;
+  }
+
+  .sidebar-wrapper {
+    display: none;
+    margin: 0;
+  }
+
+  .app-body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .btn-print {
+    display: none;
+  }
+
+  table td,
+  table th {
+    padding: 3px;
+  }
+
+  .admission-receipt {
+    margin-bottom: 0;
+    margin-top: 20px;
+    /* padding: 5px 30px; */
+    max-width: 97%;
+    border: 0.5px solid #ddd;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .school-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    gap: 4px;
+  }
+
+  .addStudentForm {
+    min-width: 800px;
+    max-width: 100%;
+    /* background-color: #fff; */
+    margin: 0;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}

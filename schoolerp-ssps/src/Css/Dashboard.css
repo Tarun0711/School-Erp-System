@@ -1,0 +1,63 @@
+.dashboard{
+  overflow-y: scroll;
+}
+
+.dashcard{
+    color: rgb(68,85,105)f;
+    width: 250px;
+    text-align: left;
+    height: 150px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin:10px auto;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.dashcard a{
+    color: rgb(68,85,105);
+}
+.chart{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Recent-Transactions-Table{
+    border: 1px solid rgb(212, 212, 212) ;
+    max-height: 300px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.chart-container{
+    width: 50%;
+}
+canvas,.bar-chart{
+    width: 100% !important;
+    height: auto !important;
+}
+@media (max-width: 768px) {
+  .chart{
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .chart-container{
+    width:100%;
+}
+  .Recent-Transactions-Table{
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,419 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "school-erp",
+    "collectionId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+    "dateExported": "2024-04-25T18:41:51.786Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "c0a97ddb-5bc6-478c-9509-03028e49b39f",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-04-11T20:06:20.205Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "65a4288e-0ac2-4991-b4a8-bf0409dcd732",
+            "name": "parent",
+            "containerId": "",
+            "created": "2024-04-20T11:55:15.114Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "3242e3e9-66e9-4a31-b3a8-7ee84cca3fba",
+            "name": "student",
+            "containerId": "",
+            "created": "2024-04-20T12:00:46.708Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "85ef6dee-615f-407d-81ab-f771db1905f3",
+            "name": "section",
+            "containerId": "",
+            "created": "2024-04-25T04:32:18.757Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "b6620ac4-5ec9-4b4a-80d3-30e48cebbc5a",
+            "name": "feeType",
+            "containerId": "",
+            "created": "2024-04-25T05:58:41.986Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3fdf12db-ff75-4806-8c5d-779f9b04bf21",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "c0a97ddb-5bc6-478c-9509-03028e49b39f",
+            "name": "login",
+            "url": "http://localhost:5000/api/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-11T20:06:29.971Z",
+            "modified": "2024-04-20T08:19:23.666Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"admin\",\n  \"password\":\"123\",\n  \"role\":\"admin\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a263205d-2271-4f40-b624-e82cdf88fc47",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "c0a97ddb-5bc6-478c-9509-03028e49b39f",
+            "name": "getAllUsers",
+            "url": "http://localhost:5000/api/user/getUser",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-20T06:06:28.630Z",
+            "modified": "2024-04-20T08:17:18.474Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjM3OWU2Mzc5YmM0NzE1YTBjNDVmZiIsImlhdCI6MTcxMzYwMTAyNSwiZXhwIjoxNzE2MTkzMDI1fQ.cu0Urkaf-bAJg_9aNHiF-sIzwxFPdk0gE0pCoZCp0bQ"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "98fd430b-7b4b-440d-ab5e-466adc4ffc38",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "c0a97ddb-5bc6-478c-9509-03028e49b39f",
+            "name": "addUser",
+            "url": "http://localhost:5000/api/user/addUser",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-20T06:31:26.943Z",
+            "modified": "2024-04-20T09:01:20.390Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjM3OWU2Mzc5YmM0NzE1YTBjNDVmZiIsImlhdCI6MTcxMzYwMTAyNSwiZXhwIjoxNzE2MTkzMDI1fQ.cu0Urkaf-bAJg_9aNHiF-sIzwxFPdk0gE0pCoZCp0bQ"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Ashum\",\n  \"password\":\"123\",\n  \"fullName\":\"Abhishek Agrawal\",\n  \"role\":\"moderator\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "dd5e83d0-b9aa-41f1-827c-f916c6557c4b",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "c0a97ddb-5bc6-478c-9509-03028e49b39f",
+            "name": "updateUser",
+            "url": "http://localhost:5000/api/user/updateUser/66237a6814493b7406630707",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-04-20T08:55:18.076Z",
+            "modified": "2024-04-20T08:56:55.207Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjM3OWU2Mzc5YmM0NzE1YTBjNDVmZiIsImlhdCI6MTcxMzYwMTAyNSwiZXhwIjoxNzE2MTkzMDI1fQ.cu0Urkaf-bAJg_9aNHiF-sIzwxFPdk0gE0pCoZCp0bQ"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"password\": \"new_password\",\r\n    \"email\": \"john.doe.updated@example.com\",\r\n    \"fullName\": \"John Doe Updated\",\r\n    \"role\": \"admin\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "b1e7788a-c3d7-41a8-884f-c531f34cb99a",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "c0a97ddb-5bc6-478c-9509-03028e49b39f",
+            "name": "getOneUserByid",
+            "url": "http://localhost:5000/api/user/getUser/66237a6814493b7406630707",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-04-20T08:55:27.214Z",
+            "modified": "2024-04-20T08:58:47.112Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjM3OWU2Mzc5YmM0NzE1YTBjNDVmZiIsImlhdCI6MTcxMzYwMTAyNSwiZXhwIjoxNzE2MTkzMDI1fQ.cu0Urkaf-bAJg_9aNHiF-sIzwxFPdk0gE0pCoZCp0bQ"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "91cd2058-2b8b-4adc-88fc-537b49af2c7a",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "c0a97ddb-5bc6-478c-9509-03028e49b39f",
+            "name": "deleteOneUser",
+            "url": "http://localhost:5000/api/user/deleteUser/66237a6814493b7406630707",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-04-20T08:55:35.503Z",
+            "modified": "2024-04-20T08:59:37.593Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjM3OWU2Mzc5YmM0NzE1YTBjNDVmZiIsImlhdCI6MTcxMzYwMTAyNSwiZXhwIjoxNzE2MTkzMDI1fQ.cu0Urkaf-bAJg_9aNHiF-sIzwxFPdk0gE0pCoZCp0bQ"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "6583f2fd-87b7-4427-ad88-7806e0f84225",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "65a4288e-0ac2-4991-b4a8-bf0409dcd732",
+            "name": "add-parent",
+            "url": "http://localhost:5000/api/parent/addParent",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-04-20T11:55:24.353Z",
+            "modified": "2024-04-20T11:59:27.229Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"parent1\",\r\n    \"password\": \"password123\",\r\n    \"email\": \"parent1@example.com\",\r\n    \"fullName\": \"Parent One\",\r\n    \"students\": [\"student_id_1\", \"student_id_2\"]\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "38e4205d-7429-4452-8426-f5a8beeebbd0",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "65a4288e-0ac2-4991-b4a8-bf0409dcd732",
+            "name": "delete-parent",
+            "url": "http://localhost:5000/api/parent/deleteParent/:parentId",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-04-20T11:55:31.724Z",
+            "modified": "2024-04-20T11:59:22.657Z",
+            "headers": []
+        },
+        {
+            "_id": "9c0a42d4-2cff-445a-a63b-2a139b7680ef",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "65a4288e-0ac2-4991-b4a8-bf0409dcd732",
+            "name": "getAll-parents",
+            "url": "http://localhost:5000/api/parent/getParents",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-04-20T11:55:40.508Z",
+            "modified": "2024-04-20T11:59:51.291Z",
+            "headers": []
+        },
+        {
+            "_id": "61bde55d-7f99-4e62-8203-c23ede9e27f1",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "65a4288e-0ac2-4991-b4a8-bf0409dcd732",
+            "name": "getOne-parent",
+            "url": "http://localhost:5000/api/parent/getParent/paretnId",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-04-20T11:55:47.450Z",
+            "modified": "2024-04-20T12:00:02.568Z",
+            "headers": []
+        },
+        {
+            "_id": "02609067-6c0f-45cf-a035-9262db7fa8dd",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "65a4288e-0ac2-4991-b4a8-bf0409dcd732",
+            "name": "updateOne-parent",
+            "url": "http://localhost:5000/api/parent/updateParent",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-04-20T11:56:03.997Z",
+            "modified": "2024-04-20T12:00:34.564Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"parent1_updated\",\r\n    \"password\": \"new_password\",\r\n    \"email\": \"parent1_updated@example.com\",\r\n    \"fullName\": \"Parent One Updated\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "a03dae9c-7178-47bf-a9ad-7ddc2195c53b",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "3242e3e9-66e9-4a31-b3a8-7ee84cca3fba",
+            "name": "add student ",
+            "url": "http://localhost:5000/api/student/addStudent",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-04-25T04:01:04.312Z",
+            "modified": "2024-04-25T04:12:17.271Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"dateOfBirth\": \"1995-05-15\",\n    \"gender\": \"Male\",\n    \"address\": \"123 Main Street\",\n    \"email\": \"john.doe@example.com\",\n    \"phoneNumber\": \"1234567890\",\n    \"classId\": \"CLASS_ID_HERE\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "5cbf3512-d40a-4747-9efd-ab1583a98716",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "85ef6dee-615f-407d-81ab-f771db1905f3",
+            "name": "addSection",
+            "url": "http://localhost:5000/api/section/add",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-04-25T04:32:26.084Z",
+            "modified": "2024-04-25T04:34:24.792Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"B\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3023d296-f6dc-4fa3-bcb8-2e23ca1fa0fe",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "85ef6dee-615f-407d-81ab-f771db1905f3",
+            "name": "get-all-sections",
+            "url": "http://localhost:5000/api/section/getAll",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-04-25T04:34:59.929Z",
+            "modified": "2024-04-25T04:35:12.886Z",
+            "headers": []
+        },
+        {
+            "_id": "465f06d0-7f8b-43d7-a961-57744e3630ea",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "85ef6dee-615f-407d-81ab-f771db1905f3",
+            "name": "delete-section",
+            "url": "http://localhost:5000/api/section/delete/6629dd50be0c8e07682231af",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2024-04-25T04:36:43.455Z",
+            "modified": "2024-04-25T04:37:12.826Z",
+            "headers": []
+        },
+        {
+            "_id": "0136b923-ecad-47d9-b1d7-e9d5bc03aefe",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "b6620ac4-5ec9-4b4a-80d3-30e48cebbc5a",
+            "name": "add-fee-type",
+            "url": "http://localhost:5000/api/fee/feetypes/add",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-04-25T05:58:50.506Z",
+            "modified": "2024-04-25T06:03:20.227Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Addmission fees\",\n  \"description\": \"Fee for addmission\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "07b93aae-288d-4855-a919-8f77b86a3b11",
+            "colId": "cc37ec9a-7bbe-428e-b5a5-50e680d12b25",
+            "containerId": "b6620ac4-5ec9-4b4a-80d3-30e48cebbc5a",
+            "name": "get-all-fee-type",
+            "url": "http://localhost:5000/api/fee/feetypes/getAll",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-04-25T06:03:39.247Z",
+            "modified": "2024-04-25T06:04:04.546Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjM3OWU2Mzc5YmM0NzE1YTBjNDVmZiIsImlhdCI6MTcxNDAxNzg5OSwiZXhwIjoxNzE2NjA5ODk5fQ.cH_rPhW5fpDjSrG8Bh0lGJ8oDovi0DfaOSLb3ZxM9lI"
+            }
+        ]
+    },
+    "ref": "H6zPtB6eBcRGnirwi1WDY9EZqs782S9_Su6U3whb_DYJnplwZ7BNA3b1h0UCLc7EnZORvah41RSJxIs000uS9Q"
+}

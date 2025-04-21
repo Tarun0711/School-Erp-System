@@ -1,0 +1,9 @@
+/* AddStudent.css */
+.photo-preview {
+    margin-bottom: 15px;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    height: auto;
+  }

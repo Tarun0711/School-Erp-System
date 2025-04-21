@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0351285.css",
+    "main.js": "/static/js/main.3e2f07eb.js",
+    "static/js/787.f0e26221.chunk.js": "/static/js/787.f0e26221.chunk.js",
+    "static/media/Students walking in front of university flat vector illustration.jpg": "/static/media/Students walking in front of university flat vector illustration.a5284662ebc755f21dc2.jpg",
+    "index.html": "/index.html",
+    "main.a0351285.css.map": "/static/css/main.a0351285.css.map",
+    "main.3e2f07eb.js.map": "/static/js/main.3e2f07eb.js.map",
+    "787.f0e26221.chunk.js.map": "/static/js/787.f0e26221.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0351285.css",
+    "static/js/main.3e2f07eb.js"
+  ]
+}

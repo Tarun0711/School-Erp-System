@@ -1,0 +1,77 @@
+{
+    "version": "0.1.0",
+    "title": "Student API Tests",
+    "requests": [
+        {
+            "name": "Add Student",
+            "description": "Add a new student",
+            "method": "POST",
+            "url": "http://localhost:3000/addStudent",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body": {
+                "firstName": "John",
+                "lastName": "Doe",
+                "dateOfBirth": "2000-01-01",
+                "gender": "Male",
+                "address": "123 Street, City",
+                "email": "john@example.com",
+                "phoneNumber": "1234567890",
+                "classId": "class_id_here",
+                "feeStructures": [
+                    "fee_structure_id_1",
+                    "fee_structure_id_2"
+                ]
+            }
+        },
+        {
+            "name": "Get All Students",
+            "description": "Get all students",
+            "method": "GET",
+            "url": "http://localhost:3000/getStudents"
+        },
+        {
+            "name": "Get Student by ID",
+            "description": "Get a student by ID",
+            "method": "GET",
+            "url": "http://localhost:3000/getStudent/student_id_here"
+        },
+        {
+            "name": "Update Student",
+            "description": "Update a student",
+            "method": "PUT",
+            "url": "http://localhost:3000/updateStudent/student_id_here",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body": {
+                "firstName": "Updated John"
+            }
+        },
+        {
+            "name": "Delete Student",
+            "description": "Delete a student",
+            "method": "DELETE",
+            "url": "http://localhost:3000/deleteStudent/student_id_here"
+        },
+        {
+            "name": "Get Students by Class",
+            "description": "Get students by class ID",
+            "method": "GET",
+            "url": "http://localhost:3000/students/byClass/class_id_here"
+        },
+        {
+            "name": "Get Students by Class and Section",
+            "description": "Get students by class ID and section",
+            "method": "GET",
+            "url": "http://localhost:3000/students/byClassAndSection/class_id_here/section_here"
+        },
+        {
+            "name": "Query Students",
+            "description": "Query students",
+            "method": "GET",
+            "url": "http://localhost:3000/students/query?firstName=John&lastName=Doe"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Student Fee Profile API Tests",
+    "description": "Test suite for student fee profile API endpoints",
+    "requests": [
+      {
+        "name": "Get Student's Fee Profile",
+        "url": "http://localhost:3000/students/STUDENT_ID_HERE/feeProfile",
+        "method": "GET",
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer YOUR_ACCESS_TOKEN_HERE"
+        }
+      },
+      {
+        "name": "Update Student's Fee Profile",
+        "url": "http://localhost:3000/students/STUDENT_ID_HERE/feeProfile",
+        "method": "PUT",
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer YOUR_ACCESS_TOKEN_HERE"
+        },
+        "body": {
+          "feeStructures": ["FEE_STRUCTURE_ID_1", "FEE_STRUCTURE_ID_2"],
+          "payments": [
+            {
+              "amount": 100,
+              "paymentDate": "2024-04-30",
+              "feeType": "Tuition Fee"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
